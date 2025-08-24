@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Gallery • St. Mark's Academy</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="assets/img/logo.png">
+<script defer src="assets/js/app.js"></script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="nav container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="St. Mark's Academy Logo" onerror="this.style.display='none'">
+      <span>St. Mark's Academy</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="houses.html">Houses</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="notices.html">Notices</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section container">
+  <h1 class="reveal-up">Photo Gallery</h1>
+  <p class="muted reveal-up delay-1">Memories from school life. (Add more images to <code>assets/img/gallery</code> and they will appear here.)</p>
+  <div class="masonry" id="gallery">
+    <!-- JS will auto-load all images from assets/img/gallery/*.jpg -->
+  </div>
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="close" aria-label="Close">×</button>
+  <img alt="Preview">
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 St. Mark's Academy • Honesty • Humanity • Humility</p>
+  </div>
+</footer>
+
+</body>
+</html>
